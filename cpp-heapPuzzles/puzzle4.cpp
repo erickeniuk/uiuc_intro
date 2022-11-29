@@ -11,9 +11,9 @@ using std::cout;
 using std::endl;
 
 int main() {
-  int *x;
-  int size = 3;
-  x = new int[size];
+  int *x; // pointer to nothing
+  int size = 3; // size stored in stack
+  x = new int[size]; // x = new integer size 3; // 
 
   for (int i = 0; i < size; i++) {
     x[i] = i + 3;

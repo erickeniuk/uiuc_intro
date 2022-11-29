@@ -6,6 +6,7 @@
  */
 
 #include "Cube.h"
+#include <iostream>
 
 namespace uiuc {
   double Cube::getVolume() {
@@ -17,6 +18,7 @@ namespace uiuc {
   }
 
   void Cube::setLength(double length) {
+    std::cout << "Length set to: " << length << std::endl;
     length_ = length;
   }
 }
