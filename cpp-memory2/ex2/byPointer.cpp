@@ -20,7 +20,7 @@ int main() {
   Cube c(10);
 
   // Send the cube to someone
-  sendCube(&c);
+  sendCube(&c); // pointers require a memory address to be sent to them
 
   return 0;
 }

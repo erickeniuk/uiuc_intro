@@ -13,7 +13,7 @@ int main() {
   Cube c(10);
 
   // Transfer the cube
-  Cube * myCube = &c;
+  Cube * myCube = &c; // transfers the $1000 via a pointer
 
   return 0;
 }

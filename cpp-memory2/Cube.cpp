@@ -8,17 +8,18 @@
 #include "Cube.h"
 #include <iostream>
 
-namespace uiuc {  
+namespace uiuc {
+  // Custom default constructor
   Cube::Cube(double length) {
     length_ = length;
     std::cout << "Created $" << getVolume() << std::endl;
   }
-
+  // Custom copy constructor
   Cube::Cube(const Cube & obj) {
     length_ = obj.length_;
     std::cout << "Created $" << getVolume() << " via copy" << std::endl;
   }
-
+  // Custom assignment operator
   Cube & Cube::operator=(const Cube & obj) {
     std::cout << "Transformed $" << getVolume() << "-> $" << obj.getVolume() << std::endl;
     length_ = obj.length_;

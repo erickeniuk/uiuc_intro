@@ -9,11 +9,11 @@
 using uiuc::Cube;
 
 Cube foo() {
-  Cube c;
-  return c;
+  Cube c; // calls default constructor on stack
+  return c; // returns/copies cube c back to main() as copy constructor
 }
 
 int main() {
-  Cube c2 = foo();
+  Cube c2 = foo(); // c2 takes on copy constructor of copy constructor to put it into c2
   return 0;
 }

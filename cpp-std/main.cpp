@@ -8,6 +8,9 @@
 #include <iostream>
 #include "Cube.h"
 
+using std::cout;
+using std::endl;
+
 int main() {
   uiuc::Cube c;
   c.setLength(2.4);
@@ -15,6 +18,8 @@ int main() {
 
   double surfaceArea = c.getSurfaceArea();
   std::cout << "Surface Area: " << surfaceArea << std::endl;
+  
+  cout << "Hello, World!" << endl;
 
   return 0;
 }

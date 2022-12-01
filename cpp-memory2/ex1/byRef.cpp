@@ -13,7 +13,7 @@ int main() {
   Cube c(10);
 
   // Transfer the cube
-  Cube & myCube = c;
+  Cube & myCube = c; // aliases c
 
   return 0;
 }

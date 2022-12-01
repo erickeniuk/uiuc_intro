@@ -10,6 +10,7 @@
 
 using uiuc::Cube;
 
+// Only difference is that we're sending it by reference variable
 bool sendCube(Cube & c) {    
   // ... logic to send a Cube somewhere ...
   return true;

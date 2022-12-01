@@ -18,7 +18,7 @@ int main() {
   Cube c(10);
 
   // Send the cube to someone
-  sendCube(c);
+  sendCube(c); // actually creates a copy of the money and not the actual money
 
   return 0;
 }
